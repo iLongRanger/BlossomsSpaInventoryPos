@@ -1,0 +1,5 @@
+TODO : >> 
+
+	finish login view and controller 
+	create home portal
+	show user and branch code on home portal
