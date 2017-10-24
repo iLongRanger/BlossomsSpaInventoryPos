@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="285.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6567a" height="54.0" layoutY="-4.0" stroke="#e6567a" strokeType="INSIDE" width="445.0" />
+      <Label layoutX="17.0" layoutY="1.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="EcosmithScript-Regular" size="27.0" />
+         </font>
+      </Label>
+      <JFXPasswordField focusColor="#e6567a" labelFloat="true" layoutX="233.0" layoutY="174.0" prefHeight="25.0" prefWidth="192.0" promptText="Password" unFocusColor="#47c9af" />
+      <JFXTextField focusColor="#e6567a" labelFloat="true" layoutX="233.0" layoutY="130.0" prefHeight="25.0" prefWidth="192.0" promptText="User Name" unFocusColor="#47c9af" />
+      <JFXButton layoutX="363.0" layoutY="231.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #47C9AF;" text="Login" textFill="WHITE" />
+      <Label fx:id="lblCode" layoutX="257.0" layoutY="15.0" prefHeight="17.0" prefWidth="157.0" text="Label" />
+   </children>
+</AnchorPane>
