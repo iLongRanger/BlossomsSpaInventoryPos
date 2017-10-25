@@ -1,5 +1,6 @@
 TODO : >> 
 
-	finish login view and controller 
+	
 	create home portal
-	show user and branch code on home portal
+	show user and branch code on home portal.
+	create an admin panel for user registration
