@@ -33,6 +33,7 @@ public class HomeController implements Initializable{
 	@FXML public TextField txtName;
 	@FXML public TextField txtCode;
 	@FXML public TextField lblClose;
+	public static String code;
 
 	
 	@Override
@@ -55,7 +56,7 @@ public class HomeController implements Initializable{
 	
 	@FXML public void validate(ActionEvent event){ 
 		
-		
+		code = txtName.getText();
 		Connection myConn = dbConnector.dbConnector();
 		
 		try{
@@ -86,26 +87,7 @@ public class HomeController implements Initializable{
 				app_stage.setX(d.width/2-(app_stage.getWidth()/2));
 				app_stage.setY(d.height/2-(app_stage.getHeight()/2));
 				
-				 Calendar rightNow = Calendar.getInstance();
-				    int y = rightNow.get(Calendar.YEAR);
-				    int m = rightNow.get(Calendar.MONTH) + 1;
-				    int day = rightNow.get(Calendar.DAY_OF_MONTH);
-				 String date = Integer.toString(y)+ " " + Integer.toString(m) + " " + Integer.toString(day);
-				 
-				 // to logs
-				 UUID idOne = UUID.randomUUID();
-			     String str=""+idOne;        
-			     int uid=str.hashCode();
-			     String filterStr=""+uid;
-			     str=filterStr.replaceAll("-", "");
-			        
-				 String logs = "insert into poslogs (id, date, branch) values (?,?,?)";
-				 PreparedStatement statement = (PreparedStatement) myConn.prepareStatement(logs);
-				 statement.setString(1, str);
-				 statement.setString(2, date);
-				 statement.setString(3, txtName.getText());
-				 statement.execute();
-				 statement.close();
+		
 			}
 			else if(count>1){
 				JOptionPane.showMessageDialog(null, "Duplicate name and code!");
@@ -117,9 +99,6 @@ public class HomeController implements Initializable{
 			rs.close();
 			pst.close();
 			
-			
-			
-		
 		}
 		catch(Exception e){
 			e.printStackTrace();

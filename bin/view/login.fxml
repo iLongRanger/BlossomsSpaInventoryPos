@@ -16,9 +16,17 @@
             <Font name="EcosmithScript-Regular" size="27.0" />
          </font>
       </Label>
-      <JFXPasswordField focusColor="#e6567a" labelFloat="true" layoutX="233.0" layoutY="174.0" prefHeight="25.0" prefWidth="192.0" promptText="Password" unFocusColor="#47c9af" />
-      <JFXTextField focusColor="#e6567a" labelFloat="true" layoutX="233.0" layoutY="136.0" prefHeight="25.0" prefWidth="192.0" promptText="User Name" unFocusColor="#47c9af" />
+      <JFXPasswordField focusColor="#e6567a" labelFloat="true" layoutX="233.0" layoutY="167.0" prefHeight="25.0" prefWidth="192.0" promptText="Password" unFocusColor="#47c9af" />
+      <JFXTextField focusColor="#e6567a" labelFloat="true" layoutX="233.0" layoutY="120.0" prefHeight="25.0" prefWidth="192.0" promptText="User Name" unFocusColor="#47c9af" />
       <JFXButton layoutX="363.0" layoutY="231.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #47C9AF;" text="Login" textFill="WHITE" />
-      <Label fx:id="lblCode" layoutX="257.0" layoutY="15.0" prefHeight="17.0" prefWidth="157.0" text="Label" />
+      <Label fx:id="lblCode" layoutX="347.0" layoutY="15.0" prefHeight="20.0" prefWidth="98.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblCode1" layoutX="254.0" layoutY="15.0" prefHeight="20.0" prefWidth="98.0" text="Branch Code:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
